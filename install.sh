@@ -15,10 +15,11 @@ echo "[NOTICE] Disabling PHP 5 and Enabling PHP 7"
 sudo a2dismod php5 && sudo a2enmod php7.1
 
 # Install mysql-server 5.7
+echo "[NOTICE] Installing mysql-server 5.7"
 sudo add-apt-repository ppa:ondrej/mysql-5.7 -y
 sudo apt-get update -y
 sudo apt-get install mysql-server -y
 
 sudo service apache2 restart
 
-
+echo "[Notice] It just finished. Properly. No thanks to you: @thepirateorange https://github.com/thepirateorange"
