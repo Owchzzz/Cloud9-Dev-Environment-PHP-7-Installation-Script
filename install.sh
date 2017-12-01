@@ -14,6 +14,11 @@ sudo apt-get install libapache2-mod-php7.1 -y
 echo "[NOTICE] Disabling PHP 5 and Enabling PHP 7"
 sudo a2dismod php5 && sudo a2enmod php7.1
 
+# Install mysql-server 5.7
+sudo add-apt-repository ppa:ondrej/mysql-5.7
+sudo apt-get update
+sudo apt-get install mysql-5.7
+
 sudo service apache2 restart
 
 
